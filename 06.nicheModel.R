@@ -65,7 +65,7 @@ for (i in species) try( {
   bg<-randomPoints(clim.stack[[8]], n=10000)
   bg <- as.data.frame(bg)
   pred.mod.allyr <- ENMevaluate(d.c, clim.stack, bg, method='checkerboard2', 
-                                RMvalues=c(0.5, 4, 0.5), fc=c("L", "LQ", "H", "LQH", "LQHP", "LQHPT"), 
+                                RMvalues=seq(0.5, 4, 0.5), fc=c("L", "LQ", "H", "LQH", "LQHP", "LQHPT"), 
                                 parallel=TRUE, kfolds = 10, algorithm='maxent.jar')
   
   # Selecting the best model
