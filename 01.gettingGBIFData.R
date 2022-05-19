@@ -63,7 +63,7 @@ library(tidyverse)
 # 'DOI of the download' using the following lines of codes. Thanks to Daniel Noesgaard (from GBIF) for his help.
 
 # Downloading GBIF download DOI
-rgbif::derived_dataset(citation_data = dd_shawan, user = "shawan_zl", pwd = "nabolakothaFB89",
+rgbif::derived_dataset(citation_data = dd_shawan, user = "aaa", pwd = "xxx",
                        title = "Spatial distribution records for Bangladeshi IUCN-listed species",
                        description = "Extracted butterfly data",
                        source_url = "https://zenodo.org/record/6440577#.YlN-8zV_WUk")
